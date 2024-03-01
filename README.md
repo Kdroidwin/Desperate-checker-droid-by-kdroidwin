@@ -5,7 +5,8 @@ UIや一部テーマ変更済み
 
 必死チェッカーもどきのリンクコピーボタン追加
 
-![Uploading Screenshot_20240301-203937.png…]()
+
+![Screenshot_20240301-203937](https://github.com/Kdroidwin/hissi_-droid-modified-by-kdroidwin/assets/144515909/b463e6b6-aa20-48c9-a488-a3d6a73cbcaa)
 
 
 myblog
