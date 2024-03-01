@@ -6,4 +6,6 @@ UIや一部テーマ変更済み
 必死チェッカーもどきのリンクコピーボタン追加
 
 
+
+myblog
 https://kdroidwin.hatenablog.com/archive
