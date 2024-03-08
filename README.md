@@ -11,6 +11,3 @@ UIや一部テーマ変更済み
 ## Credit
 
 sauza-sk
-
-myblog
-https://kdroidwin.hatenablog.com/archive
