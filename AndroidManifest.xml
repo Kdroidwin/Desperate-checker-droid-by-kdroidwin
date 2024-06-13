@@ -1,91 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:versionCode="6"
-	android:versionName="1.5"
-	package="com.sauzask.hissi"
-	>
-	<uses-sdk
-		android:minSdkVersion="4"
-		>
-	</uses-sdk>
-	<uses-permission
-		android:name="android.permission.INTERNET"
-		>
-	</uses-permission>
-	<uses-permission
-		android:name="android.permission.ACCESS_NETWORK_STATE"
-		>
-	</uses-permission>
-	<application
-		android:label="@7F050001"
-		android:icon="@7F020004"
-		android:hardwareAccelerated="true"
-		>
-		<activity
-			android:label="@7F050002"
-			android:icon="@7F020007"
-			android:name=".HissiActivity"
-			android:launchMode="2"
-			android:configChanges="0x400000FF"
-			>
-			<intent-filter
-				>
-				<action
-					android:name="android.intent.action.SEND"
-					>
-				</action>
-				<category
-					android:name="android.intent.category.DEFAULT"
-					>
-				</category>
-				<data
-					android:mimeType="text/*"
-					>
-				</data>
-			</intent-filter>
-			<intent-filter
-				>
-				<action
-					android:name="android.intent.action.VIEW"
-					>
-				</action>
-				<category
-					android:name="android.intent.category.DEFAULT"
-					>
-				</category>
-				<category
-					android:name="android.intent.category.BROWSABLE"
-					>
-				</category>
-				<data
-					android:scheme="http"
-					android:host="hissi.org"
-					android:pathPattern="/read.php/.*/.*/.*.html"
-					>
-				</data>
-			</intent-filter>
-		</activity>
-		<activity
-			android:name=".HissiTop"
-			android:configChanges="0x400000FF"
-			>
-			<intent-filter
-				>
-				<action
-					android:name="android.intent.action.MAIN"
-					>
-				</action>
-				<category
-					android:name="android.intent.category.LAUNCHER"
-					>
-				</category>
-			</intent-filter>
-		</activity>
-		<meta-data
-			android:name="android.max_aspect"
-			android:value="2.3"
-			>
-		</meta-data>
-	</application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="2.01" package="com.sauzask.hissi">
+	<uses-sdk android:minSdkVersion="23" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:label="resourceId:0x7f050001" android:icon="resourceId:0x7f020004" android:hardwareAccelerated="true">
+		<activity android:label="resourceId:0x7f050002" android:icon="resourceId:0x7f020007" android:name=".HissiActivity" android:launchMode="singleTask" android:configChanges="0x400000ff">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/*" />
+</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="http" android:host="hissi.org" android:pathPattern="/read.php/.*/.*/.*.html" />
+</intent-filter>
+</activity>
+		<activity android:name=".HissiTop" android:configChanges="0x400000ff">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+</activity>
+		<meta-data android:name="android.max_aspect" android:value="2.3" />
+</application>
 </manifest>
