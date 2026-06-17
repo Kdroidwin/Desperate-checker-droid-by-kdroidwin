@@ -21,8 +21,8 @@
 
 
 
-![Screenshot_20240301-203937](https://github.com/Kdroidwin/hissi_-droid-modified-by-kdroidwin/assets/144515909/b463e6b6-aa20-48c9-a488-a3d6a73cbcaa)
 
+<img width="1080" height="2340" alt="Image" src="https://github.com/user-attachments/assets/bad139e3-d01b-4b79-8ec9-baec96968470" />
 
 
 ## Credit
