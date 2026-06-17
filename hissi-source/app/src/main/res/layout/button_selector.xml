@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="false"
+        android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#454545"
+                        android:endColor="#272727"
+                        android:angle="270"
+                        android:type="linear"/>
+                    <stroke
+                        android:width="2dp"
+                        android:color="#808080"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_focused="false"
+        android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#454545"
+                        android:endColor="#272727"
+                        android:angle="270"
+                        android:type="linear"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_focused="true"
+        android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#272727"
+                        android:endColor="#454545"
+                        android:angle="270"
+                        android:type="linear"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_focused="true"
+        android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#454545"
+                        android:endColor="#272727"
+                        android:angle="270"
+                        android:type="linear"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

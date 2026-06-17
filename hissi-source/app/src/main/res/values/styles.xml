@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeAmoled" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#a9a9a9</item>
+    </style>
+    <style name="AppThemeDark" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#b0b0b0</item>
+    </style>
+    <style name="AppThemeWhite" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColorPrimary">#111111</item>
+        <item name="android:textColorSecondary">#666666</item>
+    </style>
+</resources>

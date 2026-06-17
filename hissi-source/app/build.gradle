@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+	namespace "com.sauzask.hissi"
+    compileSdkVersion 36
+
+    defaultConfig {
+        applicationId 'com.sauzask.hissi'
+        minSdkVersion 16
+        targetSdkVersion 36
+        versionCode 30000
+        versionName "3.0.0"
+        useLibrary 'org.apache.http.legacy'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+}
+
+dependencies {
+}

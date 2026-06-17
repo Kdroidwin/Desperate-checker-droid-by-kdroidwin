@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="30000"
+    android:versionName="3.0.0"
+    package="com.sauzask.hissi">
+    <uses-sdk android:minSdkVersion="16"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppThemeAmoled"
+        android:usesCleartextTraffic="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <activity
+            android:label="@string/share_name"
+            android:icon="@drawable/share"
+            android:name="com.sauzask.hissi.HissiActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="fontScale|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="http"
+                    android:host="hissi.org"
+                    android:pathPattern="/read.php/.*/.*/.*.html"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sauzask.hissi.HissiTop"
+            android:exported="true"
+            android:configChanges="fontScale|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.3"/>
+    </application>
+</manifest>
